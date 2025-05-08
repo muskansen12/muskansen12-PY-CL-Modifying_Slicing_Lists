@@ -24,12 +24,16 @@ def modify_list(my_list, value_to_append=None, value_to_insert=None, value_to_re
     :param value_to_remove: The value to remove from the list (default is None).
     """
     if value_to_append is not None:
+        my_list.append(value_to_append)
         # Write your code here to append the value to the list.
     
     if value_to_insert is not None:
+        my_list.insert(0, value_to_insert)
         # Write your code here to insert the element in the beginning of the list
             
     if value_to_remove is not None:
+        #if value_to_remove in my_list:
+        my_list.remove(value_to_remove)
         # Write your code here to remove the element from the list.
 
 def slice_list(my_list, start=0, end=3):
@@ -41,5 +45,5 @@ def slice_list(my_list, start=0, end=3):
     :param end: The ending index for slicing (default is 3).
     """
     # Write your code here
-    return 0
+    return my_list[start:end]
 
